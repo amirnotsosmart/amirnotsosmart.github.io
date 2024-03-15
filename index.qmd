@@ -1,0 +1,11 @@
+---
+title: "amirnotsosmart.github.io"
+---
+
+This is my dataset.
+
+```{r}
+library("tidyverse")
+goatdebate <- read.csv("goat.csv")
+goatdebate
+```
