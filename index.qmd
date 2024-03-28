@@ -4,13 +4,16 @@ title: "amirnotsosmart.github.io"
 
 This is my dataset.
 
-```{r}
-# library("tidyverse")
-# goatdebate <- read.csv("goat.csv")
-# goatdebate
+```{r, eval=FALSE,echo=TRUE}
+library("tidyverse")
+read.csv("goat.csv")
+goatdebate <- read.csv("goat.csv")
+goatdebate
+
 ```
 
 ```{=html}
 # paste link of your shiny app here
 <iframe height="400" width="100%" frameborder="no" src="https://amirnotsosmart.shinyapps.io/sample_app_nm2207/"> </iframe>
 ```
+

@@ -11,6 +11,6 @@
     "href": "index.html",
     "title": "amirnotsosmart.github.io",
     "section": "",
-    "text": "This is my dataset.\n\n# library(\"tidyverse\")\n# goatdebate &lt;- read.csv(\"goat.csv\")\n# goatdebate\n\n# paste link of your shiny app here"
+    "text": "This is my dataset.\n\nlibrary(\"tidyverse\")\nread.csv(\"goat.csv\")\ngoatdebate &lt;- read.csv(\"goat.csv\")\ngoatdebate\n\n# paste link of your shiny app here"
   }
 ]
