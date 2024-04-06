@@ -9,8 +9,8 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "amirnotsosmart.github.io",
+    "title": "Messi VS Ronaldo: Who is Better?",
     "section": "",
-    "text": "This is my dataset.\n\nlibrary(\"tidyverse\")\nread.csv(\"goat.csv\")\ngoatdebate &lt;- read.csv(\"goat.csv\")\ngoatdebate\n\n# paste link of your shiny app here"
+    "text": "This webpage serves to examine several goal metrics provided by the dataset below to “settle” the debate on who is better: Messi or Ronaldo? Select which player’s statistics you wish to view, and click on generate analysis for the specific category! In the next tab, I have provided some insights as to what each visualisation suggests.\n\nlibrary(\"tidyverse\")\nread.csv(\"goat.csv\")\ngoatdebate &lt;- read.csv(\"goat.csv\")\ngoatdebate\n\n# paste link of your shiny app here"
   }
 ]

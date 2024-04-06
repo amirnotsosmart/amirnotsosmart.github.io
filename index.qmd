@@ -1,8 +1,8 @@
 ---
-title: "amirnotsosmart.github.io"
+title: "Messi VS Ronaldo: Who is Better?"
 ---
 
-This is my dataset.
+This webpage serves to examine several goal metrics provided by the dataset below to "settle" the debate on who is better: Messi or Ronaldo? Select which player's statistics you wish to view, and click on generate analysis for the specific category! In the next tab, I have provided some insights as to what each visualisation suggests.
 
 ```{r, eval=FALSE,echo=TRUE}
 library("tidyverse")
