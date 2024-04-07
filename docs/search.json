@@ -11,6 +11,6 @@
     "href": "index.html",
     "title": "Messi VS Ronaldo: Who is Better?",
     "section": "",
-    "text": "This webpage serves to examine several goal metrics provided by the dataset below to “settle” the debate on who is better: Messi or Ronaldo? Select which player’s statistics you wish to view, and click on generate analysis for the specific category! In the next tab, I have provided some insights as to what each visualisation suggests.\n\nlibrary(\"tidyverse\")\nread.csv(\"goat.csv\")\ngoatdebate &lt;- read.csv(\"goat.csv\")\ngoatdebate\n\n# paste link of your shiny app here"
+    "text": "My name is Amir and I am a Year 2 NUS BBA student with a Minor in CnM.\nThis webpage serves to examine several goal metrics provided by the dataset below to “settle” the debate on who is better: Messi or Ronaldo? Select which player’s statistics you wish to view, and click on generate analysis for the specific category! In the next tab, I have provided some insights as to what each visualisation suggests.\n\nlibrary(\"tidyverse\")\nread.csv(\"goat.csv\")\ngoatdebate &lt;- read.csv(\"goat.csv\")\ngoatdebate\n\n# paste link of your shiny app here"
   }
 ]
