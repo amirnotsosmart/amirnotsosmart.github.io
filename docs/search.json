@@ -4,13 +4,41 @@
     "href": "about.html",
     "title": "Analysis",
     "section": "",
-    "text": "As seen from the generated analyses, one can make several deductions regarding the debate between Messi and Ronaldo.\nFirstly, let us analyse the timeplot showing the goals over seasons. Ronaldo has played 25 seasons so far and Messi has played 19 seasons. One could argue that Messi is better, because Messi’s highest scoring season is above 70 goals, however Ronaldo did not break that number and his highest scoring season only had around 60 goals. However, Ronaldo had 2 seasons scoring 60 or more goals, but Messi only had the one season with more than 60 goals which was that one season. Ronaldo also had 1 more season where he scored more than 50 goals, with 6 while Messi had only 5, and Ronaldo had only 5 seasons in 25 seasons where he scored less than 20 goals, while Messi had 6 seasons scoring less than 20 goals. This shows that statistically, although Messi had the higer maximum, Ronaldo seems to be the better scorer across his career.\nSecondly, from the goals by type plot, Ronaldo has scored in more different ways than Messi. He has scored more goals with his left foot than Messi has with his right foot, which shows that he has more goals with his weaker foot as compared to Messi. Ronaldo has also scored more goals with his head than Messi. These facts reinforce that Ronaldo is a more versatile goal scorer than Messi.\nNext, we analyse the goals by position. Ronaldo has slightly over 200 goals from the Centre Forward Position, and over 400 goals from the Left or Right Wing, while Messi has over 250 goals from the Centre Forward and over 200 goals at Right Wing, and an almost negligible number of goals on the left. Though this might mean that Messi played less games on the left, it still shows that Ronaldo is a more versatile scorer because Ronaldo has more goals from the sides as compared to Messi with more goals through the middle, and it is technically harder to score from the sides.\nWe also analyse the goal distribution by the match minute through a heatmap. Ronaldo has scored more goals after the 90th minute and after, which shows that Ronaldo is a more clutch scorer because in the later stages of the game, players generally get more fatigued so it would be harder to score, so it takes a great scorer to score in the later stages of the game. However, both of them have a very high percentage of goals late into the game within 90 minutes, so both are clutch. However, it is also tough to compare that because within 90 minutes, the goals they scored may not necessarily be the winning goal if the score is 4-1 for example."
+    "text": "As seen from the generated analyses, one can make several deductions regarding the debate between Messi and Ronaldo."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Messi VS Ronaldo: Who is Better?",
     "section": "",
-    "text": "My name is Amir and I am a Year 2 NUS BBA student with a Minor in CnM.\nThis webpage serves to examine several goal metrics provided by the dataset below to “settle” the debate on who is better: Messi or Ronaldo? Interestingly, it has been one of the biggest debates of the 21st century because it explores sports analytics deeply, examining two different types of players that have been at the top of the game of football for so long, boasting record-breaking numbers.\nThe dataset below was provided by kaggle. It is a simple csv file that contains all of Messi and Ronaldo’s goals throughout their career. It was cleaned through filtering, grouping and summarizing, ungrouping and mutating, arranging data, handling long labels, and using the “na.omit()” method to implicitly not count NA values.\nIn the analysis tab, select which player’s statistics you wish to view, and click on generate analysis for the specific category! I have also provided some insights as to what each visualisation suggests.\n\nlibrary(\"tidyverse\")\nread.csv(\"goat.csv\")\ngoatdebate &lt;- read.csv(\"goat.csv\")\ngoatdebate\n\nknitr::include_graphics(\"goats.JPG\")"
+    "text": "My name is Amir and I am a Year 2 NUS BBA student with a Minor in CnM.\nThis webpage serves to examine several goal metrics provided by the dataset below to “settle” the debate on who is better: Messi or Ronaldo? Interestingly, it has been one of the biggest debates of the 21st century because it explores sports analytics deeply, examining two different types of players that have been at the top of the game of football for so long, boasting record-breaking numbers.\nThe dataset below was provided by kaggle. It is a simple csv file that contains all of Messi and Ronaldo’s goals throughout their career. It was cleaned through filtering, grouping and summarizing, ungrouping and mutating, arranging data, handling long labels, and using the “na.omit()” method to implicitly not count NA values.\nIn the analysis tab, select which player’s statistics you wish to view, and click on generate analysis for the specific category! I have also provided some insights as to what each visualisation suggests.\n\nlibrary(\"tidyverse\")\nread.csv(\"goat.csv\")\ngoatdebate &lt;- read.csv(\"goat.csv\")\ngoatdebate\n\n\nknitr::include_graphics(\"goats.JPG\")"
+  },
+  {
+    "objectID": "about.html#goals-over-seasons---time-plot",
+    "href": "about.html#goals-over-seasons---time-plot",
+    "title": "Analysis",
+    "section": "Goals Over Seasons - Time Plot",
+    "text": "Goals Over Seasons - Time Plot\nFirstly, let us analyse the timeplot showing the goals over seasons. Ronaldo has played 25 seasons so far and Messi has played 19 seasons. One could argue that Messi is better, because Messi’s highest scoring season is above 70 goals, however Ronaldo did not break that number and his highest scoring season only had around 60 goals. However, Ronaldo had 2 seasons scoring 60 or more goals, but Messi only had the one season with more than 60 goals which was that one season. Ronaldo also had 1 more season where he scored more than 50 goals, with 6 while Messi had only 5, and Ronaldo had only 5 seasons in 25 seasons where he scored less than 20 goals, while Messi had 6 seasons scoring less than 20 goals. This shows that statistically, although Messi had the higer maximum, Ronaldo seems to be the better scorer across his career."
+  },
+  {
+    "objectID": "about.html#goals-by-type",
+    "href": "about.html#goals-by-type",
+    "title": "Analysis",
+    "section": "Goals by Type",
+    "text": "Goals by Type\nSecondly, from the goals by type plot, Ronaldo has scored in more different ways than Messi. He has scored more goals with his left foot than Messi has with his right foot, which shows that he has more goals with his weaker foot as compared to Messi. Ronaldo has also scored more goals with his head than Messi. These facts reinforce that Ronaldo is a more versatile goal scorer than Messi."
+  },
+  {
+    "objectID": "about.html#goals-by-position",
+    "href": "about.html#goals-by-position",
+    "title": "Analysis",
+    "section": "Goals By Position",
+    "text": "Goals By Position\nNext, we analyse the goals by position. Ronaldo has slightly over 200 goals from the Centre Forward Position, and over 400 goals from the Left or Right Wing, while Messi has over 250 goals from the Centre Forward and over 200 goals at Right Wing, and an almost negligible number of goals on the left. Though this might mean that Messi played less games on the left, it still shows that Ronaldo is a more versatile scorer because Ronaldo has more goals from the sides as compared to Messi with more goals through the middle, and it is technically harder to score from the sides."
+  },
+  {
+    "objectID": "about.html#goals-by-minute-heatmap",
+    "href": "about.html#goals-by-minute-heatmap",
+    "title": "Analysis",
+    "section": "Goals by Minute Heatmap",
+    "text": "Goals by Minute Heatmap\nWe also analyse the goal distribution by the match minute through a heatmap. Ronaldo has scored more goals after the 90th minute and after, which shows that Ronaldo is a more clutch scorer because in the later stages of the game, players generally get more fatigued so it would be harder to score, so it takes a great scorer to score in the later stages of the game. However, both of them have a very high percentage of goals late into the game within 90 minutes, so both are clutch. However, it is also tough to compare that because within 90 minutes, the goals they scored may not necessarily be the winning goal if the score is 4-1 for example."
   }
 ]
