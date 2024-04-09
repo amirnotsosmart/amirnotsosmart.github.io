@@ -21,6 +21,6 @@ goatdebate
 ```
 
 ```{r, eval=TRUE,echo=FALSE}
-knitr::include_graphics("goats.JPG")
+knitr::include_graphics("goats1.JPG")
 ```
 
