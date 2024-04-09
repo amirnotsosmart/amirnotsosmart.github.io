@@ -20,7 +20,7 @@ goatdebate
 
 ```
 
-```{r, eval=FALSE,echo=TRUE}
+```{r, eval=TRUE,echo=FALSE}
 knitr::include_graphics("goats.JPG")
 ```
 
