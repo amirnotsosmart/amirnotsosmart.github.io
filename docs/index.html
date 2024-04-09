@@ -158,14 +158,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 <p>My name is Amir and I am a Year 2 NUS BBA student with a Minor in CnM.</p>
-<p>This webpage serves to examine several goal metrics provided by the dataset below to “settle” the debate on who is better: Messi or Ronaldo? Select which player’s statistics you wish to view, and click on generate analysis for the specific category! In the next tab, I have provided some insights as to what each visualisation suggests.</p>
+<p>This webpage serves to examine several goal metrics provided by the dataset below to “settle” the debate on who is better: Messi or Ronaldo? Interestingly, it has been one of the biggest debates of the 21st century because it explores sports analytics deeply, examining two different types of players that have been at the top of the game of football for so long, boasting record-breaking numbers.</p>
+<p>The dataset below was provided by kaggle. It is a simple csv file that contains all of Messi and Ronaldo’s goals throughout their career. It was cleaned through filtering, grouping and summarizing, ungrouping and mutating, arranging data, handling long labels, and using the “na.omit()” method to implicitly not count NA values.</p>
+<p>In the analysis tab, select which player’s statistics you wish to view, and click on generate analysis for the specific category! I have also provided some insights as to what each visualisation suggests.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">read.csv</span>(<span class="st">"goat.csv"</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>goatdebate <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"goat.csv"</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>goatdebate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<iframe height="400" width="100%" frameborder="no" src="https://amirnotsosmart.shinyapps.io/sample_app_nm2207/"> </iframe>
+knitr::include_graphics("goats.JPG")
 
 
 

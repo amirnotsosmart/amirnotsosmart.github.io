@@ -4,7 +4,13 @@ title: "Messi VS Ronaldo: Who is Better?"
 
 My name is Amir and I am a Year 2 NUS BBA student with a Minor in CnM. 
 
-This webpage serves to examine several goal metrics provided by the dataset below to "settle" the debate on who is better: Messi or Ronaldo? Select which player's statistics you wish to view, and click on generate analysis for the specific category! In the next tab, I have provided some insights as to what each visualisation suggests.
+This webpage serves to examine several goal metrics provided by the dataset below to "settle" the debate on who is better: Messi or Ronaldo? Interestingly, it has been one of the biggest debates of the 21st century because it explores sports analytics deeply, examining two different types of players that have been at the top of the game of football for so long, boasting record-breaking numbers.
+
+The dataset below was provided by kaggle. It is a simple csv file that contains all of Messi and Ronaldo's goals throughout their career. It was cleaned through filtering, grouping and summarizing, ungrouping and mutating, arranging data, handling long labels, and using the "na.omit()" method to implicitly not count NA values. 
+
+In the analysis tab, select which player's statistics you wish to view, and click on generate analysis for the specific category! I have also provided some insights as to what each visualisation suggests.
+
+
 
 ```{r, eval=FALSE,echo=TRUE}
 library("tidyverse")
@@ -15,6 +21,6 @@ goatdebate
 ```
 
 ```{=html}
-<iframe height="400" width="100%" frameborder="no" src="https://amirnotsosmart.shinyapps.io/sample_app_nm2207/"> </iframe>
+knitr::include_graphics("goats.JPG")
 ```
 
