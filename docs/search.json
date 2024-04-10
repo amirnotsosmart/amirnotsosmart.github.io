@@ -54,5 +54,12 @@
     "title": "Analysis",
     "section": "Interactive Shiny App",
     "text": "Interactive Shiny App"
+  },
+  {
+    "objectID": "about.html#some-additional-plots-for-analysis",
+    "href": "about.html#some-additional-plots-for-analysis",
+    "title": "Analysis",
+    "section": "Some additional plots for analysis",
+    "text": "Some additional plots for analysis\n\nlibrary(\"tidyverse\")\nlibrary(dplyr)\ngoatdebate &lt;- read.csv(\"goat.csv\")\n\ngoals_by_league &lt;- goatdebate %&gt;%\n  group_by(Player, Competition) %&gt;%\n  summarise(Goals = n(), .groups = 'drop')\n\nggplot(goals_by_league, aes(x = Competition, y = Goals, fill = Player)) +\n  geom_bar(stat = \"identity\", position = position_dodge()) +\n  labs(title = \"Number of Goals in Each League by Player\",\n       x = \"League\",\n       y = \"Number of Goals\") +\n  theme_minimal() +\n  theme(axis.text.x = element_text(angle = 45, hjust = 1))\n\n\n\n\nHere is a plot that shows Messi and Ronaldo’s goals in the league’s they’ve played in. Another bit of analysis that can be done is the fact that Ronaldo has played in more leagues than Messi, which shows that he is a more versatile scorer because he is able to score in different settings. Furthermore, he has played in the Premier League while Messi has not, which is generally a more difficult league to do well in. Furthermore, he has more goals in the Champions League, which is the best competition in the world.\n\nlibrary(\"tidyverse\")\nlibrary(dplyr)\ngoatdebate &lt;- read.csv(\"goat.csv\")\n\ngoatdebate$Result &lt;- as.character(goatdebate$Result)\n\ngoat_data_wins &lt;- goatdebate %&gt;%\n  separate(Result, into = c(\"GoalsFor\", \"GoalsAgainst\"), sep = \":\", convert = TRUE) %&gt;%\n  mutate(Win = if_else(GoalsFor &gt; GoalsAgainst, 1, 0)) %&gt;%\n  group_by(Player) %&gt;%\n  summarise(Wins = sum(Win, na.rm = TRUE))\n\nggplot(goat_data_wins, aes(x = Player, y = Wins, fill = Player)) +\n  geom_bar(stat = \"identity\") +\n  labs(title = \"Number of Wins by Player\", x = \"Player\", y = \"Wins\") +\n  theme_minimal()\n\n\n\n\nHere is a plot of the number of wins of each player. Although Ronaldo does have slightly more wins, Messi has played fewer seasons than Ronaldo. So that is important to note as well because Messi would thus on average have a higher win percentage than Ronaldo, but Ronaldo has more total wins."
   }
 ]

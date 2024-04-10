@@ -82,16 +82,14 @@ library("tidyverse")
 library(dplyr)
 goatdebate <- read.csv("goat.csv")
 
-goat_data$Result <- as.character(goat_data$Result)
+goatdebate$Result <- as.character(goatdebate$Result)
 
-# Create a new dataframe to calculate the wins
-goat_data_wins <- goat_data %>%
+goat_data_wins <- goatdebate %>%
   separate(Result, into = c("GoalsFor", "GoalsAgainst"), sep = ":", convert = TRUE) %>%
   mutate(Win = if_else(GoalsFor > GoalsAgainst, 1, 0)) %>%
   group_by(Player) %>%
   summarise(Wins = sum(Win, na.rm = TRUE))
 
-# Plot the data
 ggplot(goat_data_wins, aes(x = Player, y = Wins, fill = Player)) +
   geom_bar(stat = "identity") +
   labs(title = "Number of Wins by Player", x = "Player", y = "Wins") +
