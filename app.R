@@ -74,7 +74,7 @@ server <- function(input, output) {
       print(str(filtered_data))
       ggplot(filtered_data, aes(x = Minute, y = factor(1), fill = TotalGoals)) + # Assuming 'Minute' is numeric
         geom_tile() +
-        scale_fill_gradient(low = "blue", high = "red") +
+        scale_fill_gradient(low = "lightblue", high = "blue") +
         labs(title = "Goal Distribution by Match Minute", x = "Minute of Match", y = "") +
         theme(axis.text.x = element_text(angle = 90))
     })
