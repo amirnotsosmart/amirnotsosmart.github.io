@@ -9,7 +9,7 @@ Before we analyse the plots, it is always good practice to see what observations
 
 Below are some summary statistics about the dataset. 
 
-```{r, eval=TRUE,echo=TRUE}
+```{r, eval=TRUE,echo=FALSE}
 library("tidyverse")
 library(dplyr)
 goatdebate <- read.csv("goat.csv")
