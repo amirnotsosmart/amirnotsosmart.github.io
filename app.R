@@ -76,7 +76,9 @@ server <- function(input, output) {
         geom_tile() +
         scale_fill_gradient(low = "lightblue", high = "blue") +
         labs(title = "Goal Distribution by Match Minute", x = "Minute of Match", y = "") +
-        theme(axis.text.x = element_text(angle = 90))
+        theme(axis.text.x = element_text(angle = 90),
+              axis.text.y = element_blank()) +
+        theme_bw()
     })
     
     

@@ -9,9 +9,13 @@ Before we analyse the plots, it is always good practice to see what observations
 
 Below are some summary statistics about the dataset. 
 
-```{r, eval=TRUE,echo=FALSE}
+```{r, echo=F, message=F, warning=F}
 library("tidyverse")
 library(dplyr)
+```
+
+
+```{r, eval=TRUE,echo=FALSE, warning=F, message=F}
 goatdebate <- read.csv("goat.csv")
 
 total_goals_by_player <- 
@@ -57,7 +61,7 @@ We also analyse the goal distribution by the match minute through a heatmap. Ron
 
 ## Some additional plots for analysis 
 
-```{r, eval=TRUE,echo=TRUE}
+```{r, eval=TRUE,echo=FALSE}
 library("tidyverse")
 library(dplyr)
 goatdebate <- read.csv("goat.csv")
@@ -66,18 +70,48 @@ goals_by_league <- goatdebate %>%
   group_by(Player, Competition) %>%
   summarise(Goals = n(), .groups = 'drop')
 
-ggplot(goals_by_league, aes(x = Competition, y = Goals, fill = Player)) +
+goals_by_league %>%
+  pivot_wider(names_from = Player, values_from = Goals) %>%
+  na.omit() %>%
+  pivot_longer(`Cristiano Ronaldo`:`Lionel Messi`, names_to = "Player", values_to = "Goals") %>%
+  mutate(Competition = reorder(Competition, -Goals)) %>%
+  ggplot( aes(x = Competition, y = Goals, fill = Player)) +
   geom_bar(stat = "identity", position = position_dodge()) +
   labs(title = "Number of Goals in Each League by Player",
        x = "League",
        y = "Number of Goals") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_y_log10()
+
+goals_by_league %>%
+  filter(Player == "Cristiano Ronaldo") %>%
+  mutate(Competition = reorder(Competition, -Goals)) %>%
+  ggplot( aes(x = Competition, y = Goals)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  labs(title = "Number of Goals in Each League for Ronaldo",
+       x = "League",
+       y = "Number of Goals") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_y_log10()
+
+goals_by_league %>%
+  filter(Player == "Lionel Messi") %>%
+  mutate(Competition = reorder(Competition, -Goals)) %>%
+  ggplot( aes(x = Competition, y = Goals)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  labs(title = "Number of Goals in Each League for Messi",
+       x = "League",
+       y = "Number of Goals") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_y_log10()
 ```
 
-Here is a plot that shows Messi and Ronaldo's goals in the league's they've played in. Another bit of analysis that can be done is the fact that Ronaldo has played in more leagues than Messi, which shows that he is a more versatile scorer because he is able to score in different settings. Furthermore, he has played in the Premier League while Messi has not, which is generally a more difficult league to do well in. Furthermore, he has more goals in the Champions League, which is the best competition in the world.
+Here is a plot that shows Messi and Ronaldo's goals in the league's they've played in. Another bit of analysis that can be done is the fact that Ronaldo has played in more leagues than Messi, which shows that he is a more versatile scorer because he is able to score in different settings. Furthermore, he has played in the Premier League while Messi has not, which is generally a more difficult league to do well in. Furthermore, he has more goals in the Champions League, which is the best competition in the world.Another interesting statistic is that Ronaldo has 60 goals in 49 Champions League games, and this is a record that nobody else has come close to in football.
 
-```{r, eval=TRUE,echo=TRUE}
+```{r, eval=TRUE,echo=FALSE}
 library("tidyverse")
 library(dplyr)
 goatdebate <- read.csv("goat.csv")
