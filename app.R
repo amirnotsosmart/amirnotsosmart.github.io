@@ -7,7 +7,7 @@ library(tidyverse)
 goat_data <- read.csv("goat.csv")
 
 ui <- fluidPage(
-  titlePanel("Messi vs Ronaldo: A Comparative Analysis"),
+  titlePanel("Messi vs Ronaldo: Goal Comparisons"),
   sidebarLayout(
     sidebarPanel(
       selectInput("player", "Choose Player", choices = unique(goat_data$Player)),
@@ -46,7 +46,7 @@ server <- function(input, output) {
       }
     })
     
-    # Corrected Bar Plot Code
+    
     output$compPlot <- renderPlot({
       df <- goat_data %>%
         filter(Player == input$player) %>%
@@ -62,7 +62,7 @@ server <- function(input, output) {
       
     })
     
-    # Corrected Heatmap Code
+    
     output$heatmapPlot <- renderPlot({
       filtered_data <- goat_data %>%
         filter(Player == input$player) %>%
@@ -82,14 +82,14 @@ server <- function(input, output) {
     })
     
     
-    # Render a bar plot for goals by type
+    
     output$typePlot <- renderPlot({
       filtered_data <- goat_data %>%
         filter(Player == input$player) %>%
         group_by(Type) %>%
         summarise(TotalGoals = n())  # Count the number of rows in each group
       
-      # Plot the data
+     
       ggplot(filtered_data, aes(x = Type, y = TotalGoals)) +
         geom_col() +
         theme_minimal() +
