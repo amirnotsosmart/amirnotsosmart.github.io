@@ -2,20 +2,34 @@
 title: "Analysis"
 ---
 Before we dive into it, let us explain what each variable means:
-Player: Refers to either Messi or Ronaldo.
-Season: Indicates the season when the goal was scored. This matters because each season is different in many factors; neither Ronaldo nor Messi remains the same player throughout their football career.
-Competition: Indicates the competition in which the goal was scored. Some competitions are more significant than others, and some leagues are more competitive or harder to perform well than others.
-Matchday: Indicates which matchday the goal was scored in. A later matchday or round indicates a later time in the competition, which bears significance as well. A later match in a round has a higher weightage than an earlier one. 
-Date: Indicates the date of the goal scored.
-Venue: Indicates whether the goal was scored in a Home (H) or an Away (A) game. Generally, A games are harder to perform in because it is not your home stadium and a majority of the fans there would be cheering for the other team – adding to the mental challenge. 
-Club: Refers to the club that the goal was scored for.
-Opponent:  Refers to the opponent club that the goal was scored against.
-Result: Refers to the final score of the match.
-Playing Position: Refers to which position on the field the player was playing. Generally, it is easier to score from a central position. 
-Minute: Refers to the minute of the match at which the goal was scored.
-Score: Refers to the score tally when the goal was made.
-Type: Refers to the type of goal scored. Different types of goals correspond to differing difficulties of execution.
-Goal assist: Refers to the player who assisted the goal. Some players are better skilled than others, hence receiving a ball from these players increases the possibility of one scoring. 
+
+* **Player** : Refers to either Messi or Ronaldo.
+
+* **Season** : Indicates the season when the goal was scored. This matters because each season is different in many factors; neither Ronaldo nor Messi remains the same player throughout their football career.
+
+* **Competition** : Indicates the competition in which the goal was scored. Some competitions are more significant than others, and some leagues are more competitive or harder to perform well than others.
+
+* **Matchday** : Indicates which matchday the goal was scored in. A later matchday or round indicates a later time in the competition, which bears significance as well. A later match in a round has a higher weightage than an earlier one. 
+
+* **Date** : Indicates the date of the goal scored.
+
+* **Venue** : Indicates whether the goal was scored in a Home (H) or an Away (A) game. Generally, A games are harder to perform in because it is not your home stadium and a majority of the fans there would be cheering for the other team – adding to the mental challenge. 
+
+* **Club** : Refers to the club that the goal was scored for.
+
+* **Opponent** :  Refers to the opponent club that the goal was scored against.
+
+* **Result** : Refers to the final score of the match.
+
+* **Playing Position** : Refers to which position on the field the player was playing. Generally, it is easier to score from a central position. 
+
+* **Minute** : Refers to the minute of the match at which the goal was scored.
+
+* **Score** : Refers to the score tally when the goal was made.
+
+* **Type** : Refers to the type of goal scored. Different types of goals correspond to differing difficulties of execution.
+
+* **Goal assist** : Refers to the player who assisted the goal. Some players are better skilled than others, hence receiving a ball from these players increases the possibility of one scoring. 
 
 
 ## General Observations
@@ -176,5 +190,12 @@ Above is a plot showing the number of wins for each player. While Ronaldo has sl
 
 5. League Performance: Ronaldo's success in multiple leagues, including the highly competitive Premier League, highlights his adaptability and ability to excel in different football environments, further giving him an edge in terms of versatility.
 
+6. Wins and Win Percentage: While Ronaldo has more total wins, Messi likely maintains a higher average win percentage due to playing fewer seasons, indicating his impact on team success relative to the duration of his career.
+
+## Conclusion
+
+In conclusion, while both Messi and Ronaldo have left an indelible mark on the football world, a deeper analysis suggests Ronaldo's superiority in various aspects of the game. Despite Messi's impressive goal-scoring record, Ronaldo's consistent performance across multiple seasons and leagues, coupled with his unmatched versatility in scoring from different positions and with various techniques, underscores his status as a dominant force in football. 
+
+Furthermore, Ronaldo's ability to excel under pressure, demonstrated by his propensity for scoring crucial goals, particularly in late-game situations, solidifies his reputation as a clutch player. Additionally, Ronaldo's success in adapting to different football environments, including the highly competitive Premier League, showcases his resilience and adaptability This sets him apart as a truly exceptional athlete. While Messi's accomplishments are undoubtedly remarkable, Ronaldo's multifaceted skill set and enduring impact on the game position him as the stronger player in this comparison.
 
 
